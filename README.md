@@ -27,11 +27,11 @@ Things you may want to cover:
 ## usersテーブル
 |Column|Type|Options|
 |------|----|-------|
-|name|string|null: false, unique: true|
+|name|string|null: false, unique: true, index: true|
 |mail|string|null: false, unique: true|
 
 ### Association
-- has_many :groups, through:members
+- has_many :groups, through: :members
 - has_many :members
 - has_many :messages
 
@@ -63,8 +63,8 @@ Things you may want to cover:
 |------|----|-------|
 |body|text||
 |image|string||
-|user_id|references: user|null: false, foreign_key: true|
-|group_id|references: group|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|group_id|references|null: false, foreign_key: true|
 
 ### Association
 - belongs_to :user
