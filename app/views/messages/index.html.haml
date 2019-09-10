@@ -6,16 +6,16 @@
         %p.side-header__box__user-name aabb
         %ul.side-header__box__menu
           %li.side-header__box__menu__edit-user
-            %a{:href => ""}
-              %i.fa.fa-edit
+            = link_to 
+            %i.fa.fa-edit
           %li.side-header__box__menu__new-group
-            %a{:href => ""}
-              %i.fa.fa-cog
+            = link_to 
+            %i.fa.fa-cog
     .groups
-      %a{:href => ""}
-        .group
-          %p.group__group-name aaa
-          %p.group__latest-message sss
+      = link_to 
+      .group
+        %p.group__group-name aaa
+        %p.group__latest-message sss
   .chat-main
     .main-header
       .main-header__left-box
